@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
@@ -18,10 +20,27 @@ public class ResultActivity extends AppCompatActivity {
         String result = i.getStringExtra("result");
 
 //        TextView resultView = findViewById(R.id.result);
-//
 //        resultView.setText(result);
 
         ((TextView) findViewById(R.id.result)).setText(result);
+
+        /*계산기 화면으로 돌아가기*/
+
+        System.out.println("#################");
+        System.out.println(findViewById(R.id.btnBack));
+        System.out.println("#################");
+
+
+
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainPage = new Intent();
+
+                Log.d("되돌아가기", "onClick: back");
+                startActivity(mainPage);
+            }
+        });
 
     }
 }
