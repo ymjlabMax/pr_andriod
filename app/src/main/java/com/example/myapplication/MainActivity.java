@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+        /* 결과 화면 보내기 */
         findViewById(R.id.btnCheck).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,16 +102,5 @@ public class MainActivity extends AppCompatActivity {
         };
     };
 
-    // GetContent creates an ActivityResultLauncher<String> to allow you to pass
-    // in the mime type you'd like to allow the user to select
-    // GetContent creates an ActivityResultLauncher<String> to allow you to pass
-// in the mime type you'd like to allow the user to select
-    ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(),
-            new ActivityResultCallback<Uri>() {
-                @Override
-                public void onActivityResult(Uri uri) {
-                    // Handle the returned Uri
-                }
-            });
 
 }
