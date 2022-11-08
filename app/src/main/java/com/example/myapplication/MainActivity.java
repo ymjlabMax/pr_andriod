@@ -1,22 +1,24 @@
 package com.example.myapplication;
 
+import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView editResult;
-    TextView addResult;
+    TextView result_box;
+    Button btn_result;
 
     String histroy;
     String num1;
@@ -24,11 +26,14 @@ public class MainActivity extends AppCompatActivity {
     double d1;
     double d2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editResult = findViewById(R.id.editResult);
+        result_box = findViewById(R.id.resultBox);
+        btn_result = findViewById(R.id.btnResult);
 
 
         findViewById(R.id.btn0).setOnClickListener(clickListener);
@@ -76,9 +81,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
             }
         });
-        /* 결과 화면 보내기 */
+        /* 결과 화면 보내기 인텐트 사용해서 보내기 */
         findViewById(R.id.btnCheck).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,8 +96,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /* resiterForActivityResult 활용 인텐트 */
+        btn_result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent resultPage = new Intent(getBaseContext(), SubActivity.class);
 
+                launcher.launch(resultPage);
+            }
+        });
     }
+
+
+    ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult data) {
+
+                    Log.d("data", "onActivityResult: "+ data);
+                    if(data.getResultCode() == Activity.RESULT_OK){
+                        Intent intent = data.getData();
+                        String result = intent.getStringExtra("result");
+
+                        result_box.setText(result);
+                    }
+
+                }
+            }
+    );
+
+
 
     /*숫자 키 눌렀을때 값 전달*/
     View.OnClickListener clickListener = new View.OnClickListener() {

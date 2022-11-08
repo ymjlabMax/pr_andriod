@@ -4,24 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity">
+    tools:context=".ResultActivity"
+    android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="30dp"></TextView>
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"/>
 
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="back"></Button>
+            android:layout_gravity="center"
+            android:text="back" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

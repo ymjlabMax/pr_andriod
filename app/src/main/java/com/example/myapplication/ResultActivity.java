@@ -15,6 +15,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+
         Intent i = getIntent();
 
         String result = i.getStringExtra("result");
@@ -41,6 +42,8 @@ public class ResultActivity extends AppCompatActivity {
                 startActivity(mainPage);
             }
         });
+
+
 
     }
 }
