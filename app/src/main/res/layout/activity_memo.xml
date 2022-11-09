@@ -44,6 +44,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnInternal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_blue"
@@ -51,11 +52,12 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/btnExternal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_red"
                 android:text="External"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10sp"
                 android:layout_weight="1"/>
 
         </LinearLayout>
