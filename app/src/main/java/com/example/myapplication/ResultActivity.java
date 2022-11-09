@@ -17,7 +17,6 @@ public class ResultActivity extends AppCompatActivity {
 
 
         Intent i = getIntent();
-
         String result = i.getStringExtra("result");
 
 //        TextView resultView = findViewById(R.id.result);

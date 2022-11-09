@@ -302,7 +302,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
 
         <Button
             android:id="@+id/btnResult"
@@ -328,9 +329,25 @@
             android:layout_marginRight="10sp"
             android:text="저장"
             android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,UsingOnClickInXml"
+            android:onClick="mOnClick"/>
+
+        <Button
+            android:id="@+id/btnMemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:background="@drawable/btn_blue"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="메모장"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText,UsingOnClickInXml"
+            />
 
     </LinearLayout>
+
 
 
 
