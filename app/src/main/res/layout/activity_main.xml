@@ -59,15 +59,16 @@
     <!-- 가로정렬    -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/btn7"
             android:tag="7"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
@@ -79,7 +80,7 @@
             android:id="@+id/btn8"
             android:tag="8"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
@@ -91,7 +92,7 @@
             android:id="@+id/btn9"
             android:tag="9"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
@@ -102,7 +103,7 @@
         <TextView
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_red_light"
             android:gravity="center"
@@ -114,15 +115,16 @@
     <!-- 가로정렬    -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/btn4"
             android:tag="4"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
@@ -134,7 +136,7 @@
             android:id="@+id/btn5"
             android:tag="5"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
@@ -146,7 +148,7 @@
             android:id="@+id/btn6"
             android:tag="6"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
@@ -157,7 +159,7 @@
         <TextView
             android:id="@+id/btnMinus"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_red_light"
             android:gravity="center"
@@ -169,15 +171,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
 
         <TextView
             android:id="@+id/btn1"
             android:tag="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
@@ -189,7 +193,7 @@
             android:id="@+id/btn2"
             android:tag="2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
@@ -201,7 +205,7 @@
             android:id="@+id/btn3"
             android:tag="3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
@@ -212,7 +216,7 @@
         <TextView
             android:id="@+id/btnAdd"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_red_light"
             android:gravity="center"
@@ -224,15 +228,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/btn0"
             android:tag="0"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_green_light"
             android:gravity="center"
@@ -243,7 +248,7 @@
         <TextView
             android:id="@+id/btnPoint"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
@@ -254,18 +259,18 @@
         <TextView
             android:id="@+id/btnCheck"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@android:color/holo_orange_light"
             android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:textSize="40dp"
-            android:text="="/>
+            android:text="="
+            android:textSize="40dp" />
 
         <TextView
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_red_light"
             android:gravity="center"
@@ -287,7 +292,6 @@
             android:layout_height="wrap_content"
             android:textSize="40sp"
             android:gravity="right"
-            android:paddingEnd="10dp"
             android:background="@android:color/darker_gray"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"/>
@@ -302,15 +306,29 @@
 
         <Button
             android:id="@+id/btnResult"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="40sp"
             android:gravity="center"
-            android:paddingEnd="10dp"
-            android:background="@android:color/darker_gray"
+            android:background="@drawable/btn_red"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            android:text="입력하기"/>
+            android:text="입력"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:background="@drawable/btn_blue"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="저장"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 

@@ -27,10 +27,6 @@ public class ResultActivity extends AppCompatActivity {
 
         /*계산기 화면으로 돌아가기*/
 
-        System.out.println("#################");
-        System.out.println(findViewById(R.id.btnBack));
-        System.out.println("#################");
-
 
 
         findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {

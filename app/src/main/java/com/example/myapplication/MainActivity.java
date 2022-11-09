@@ -78,10 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 d1 = Double.parseDouble(editResult.getText().toString());
 
 
-
-
-
-
             }
         });
         /* 결과 화면 보내기 인텐트 사용해서 보내기 */
@@ -116,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("data", "onActivityResult: "+ data);
                     if(data.getResultCode() == Activity.RESULT_OK){
                         Intent intent = data.getData();
+                        assert intent != null;
                         String result = intent.getStringExtra("result");
 
                         result_box.setText(result);
